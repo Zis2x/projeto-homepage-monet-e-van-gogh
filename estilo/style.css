@@ -21,3 +21,57 @@
  /*#F0E6D2*/
  /*#F1BD5F*/
  /*#255C99*/
+
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    height: 100vh;
+    width: 100vw;
+ }
+ body {
+    background-color: #A8D3E1;
+ }
+ header {
+  background-color: #F6F2E9;
+  padding: 20px;
+ }
+
+ header h1 {
+  text-align: center;
+ }
+ menu {
+  display: inline-block;
+ }
+
+ menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+ }
+ menu > ul > li {
+  display: inline;
+  margin: 0 15px;
+  
+ }
+ menu a {
+  text-decoration: none;
+ }
+ 
+ main {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+ }
+
+ section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ }
+ section.Van-Gogh {
+    display: none;
+ }
