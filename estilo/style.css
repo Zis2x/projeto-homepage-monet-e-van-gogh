@@ -2,11 +2,14 @@
 
  *{}
  /*Paleta de cores Monet*/
- /*#A8D3E1*/
- /*#C9B7DD*/
- /*#F2D3E2*/
- /*#DCECC9*/
- /*#F6F2E9*/
+ :root {
+   --cor1: #A8D3E1;
+   --cor2: #C9B7DD;
+   --cor3: #F2D3E2;
+   --cor4: #DCECC9;
+   --cor5: #F6F2E9;
+   --cor6: #255C99;
+ }
 
  /*Paleta de cores Van Gogh*/
  /*#0A3D7C*/
@@ -20,9 +23,9 @@
  /*#EAD4E8*/
  /*#F0E6D2*/
  /*#F1BD5F*/
- /*#255C99*/
+ /**/
 
-  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Oldenburg&display=swap');
 
   html, body {
     margin: 0;
@@ -32,7 +35,9 @@
     width: 100vw;
  }
  body {
-    background-color: #A8D3E1;
+    background-image: url('../quadros/fundo-monet-1.5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
  }
  header {
   background-color: #F6F2E9;
@@ -41,6 +46,7 @@
 
  header h1 {
   text-align: center;
+  font-variant: small-caps;
  }
  menu {
   display: inline-block;
@@ -59,6 +65,11 @@
  menu a {
   text-decoration: none;
  }
+ menu a:hover {
+   border: 1px solid var(--cor1);
+   padding: 5px;
+   transition: 0.1s;
+ }
  
  main {
     height: 100vh;
@@ -71,7 +82,37 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    
+ }
+
+ section.Monet  {
+   background-color: #255b9934;
+   padding: 10px;
+   
+ }
+ section.Monet p {
+    color: white;
+    font-family: "Oldenburg", sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
+    font-variant: small-caps;
+    font-style: normal;
+    text-align: center;
  }
  section.Van-Gogh {
     display: none;
+ }
+ 
+ footer {
+      background-color: #F6F2E9;
+      text-align: center;
+      padding: 10px;
+      
+ }
+ footer p {
+   margin: 0px;
+   padding: 0px;
+ }
+ footer a {
+    text-decoration: none;
  }
