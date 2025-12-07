@@ -109,7 +109,11 @@
  footer p {
    margin: 0px;
    padding: 0px;
+   background-color: #F6F2E9;
  }
  footer a {
     text-decoration: none;
+ }
+ footer > p > a:hover {
+   color: var(--cor2)
  }
